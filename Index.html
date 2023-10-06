@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestiario</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+
+        header{
+            
+            
+            top: 0px;
+            background-color: #333;
+            padding: 0px;
+            margin: 0 auto;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        ul {
+            display: inline-block;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            background-color: green;
+            border-radius: 2px;
+            padding: 5px;
+            margin: 5px;
+            border: 5px;
+        }
+
+        .words {
+            display: none;
+            margin-left: 20px;
+        }
+
+        .words li {
+            margin-bottom: 2px;
+        }
+
+        span{
+            margin: auto;
+        }
+        img{
+            height: 600px;
+            width: auto;
+            border: 15px ridge rgb(5, 8, 5);
+            margin: inherit;
+            
+        }
+
+        .user-input-container {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .user-input-container input {
+            margin-right: 5px;
+        }
+
+        .clone-button {
+            margin-left: 10px;
+        }
+
+        #btn-scroll-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        text-decoration: none;
+        border-radius: 50%;
+        display: none;
+        }
+
+        #btn-scroll-top.show {
+        display: block;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li ><a href="#Aboleth">Aboleth</a></li>
+                <li ><a href="#Artus-Cimber">Artus Cimber</a></li>
+                <li ><a href="#Asesino">Asesino</a></li>
+                <li ><a href="#Bandido">Bandido</a></li>    
+                <li ><a href="#Basilisco">Basilisco</a></li>
+                <li ><a href="#Batidor">Batidor</a></li>
+                <li ><a href="#Campeon">Campeon</a></li>
+                <li ><a href="#Capitan-Bandido">Capitan Bandido</a></li>
+                <li ><a href="#Contemplador">Contemplador</a></li>
+                <li ><a href="#Couatl">Couatl</a></li>
+                <li ><a href="#Demonios">Demonios</a></li>
+                <li ><a href="#Druida">Druida</a></li>
+                <li ><a href="#Elementales">Elementales</a></li>
+                
+            </ul>
+            <ul>
+                <li ><a href="#Espia">Espia</a></li>   
+                <li ><a href="#Esqueleto">Esqueleto</a></li>
+                <li ><a href="#Garra-Reptante">Garra Reptante</a></li>
+                <li ><a href="#Golems">Golems</a></li>
+                <li ><a href="#Guardia">Guardia</a></li>
+                <li ><a href="#Guerrero-Tribal">Guerrero Tribal</a></li>
+                <li ><a href="#Gules">Gules</a></li>
+                <li ><a href="#Licantropos">Licantropos</a></li>
+                <li ><a href="#Magos">Magos</a></li>
+                <li ><a href="#Maton">Maton</a></li>
+                <li ><a href="#Noble">Noble</a></li>
+                <li ><a href="#Ras-Nsi">Ras Nsi</a></li>
+                <li ><a href="#Tabaxis">Tabaxis</a></li>
+                <li ><a href="#Tumulario">Tumulario</a></li>
+                <li ><a href="#Veterano">Veterano</a></li>
+                <li ><a href="#Yuan-Tis">Yuan-Tis</a></li>
+                <li ><a href="#Zombis">Zombis</a></li>    
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <span id="Aboleth">
+            <h1>Aboleth</h1>
+            <img src="img/Aboleth.JPG" alt="">
+            <br>
+            <img src="img/FotoAboleth.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <span id="Artus-Cimber">
+            <h1>Artus Cimber</h1>
+            <img src="img/Artus Cimber.JPG" alt="Artus Cimber">
+            <img src="img/Dragonbait.JPG" alt="Dragonbait">
+            <br>
+            <img src="img/FotoArtusCimber.JPG" alt="">
+            <img src="img/FotoDragonbait.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Artus-Cimber')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Asesino">
+            <h1>Asesino</h1>
+            <img src="img/Asesino.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Bandido">
+            <h1>Bandido</h1>
+            <img src="img/Bandido.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Basilisco">
+            <h1>Basilisco</h1>
+            <img src="img/Basilisco.JPG" alt="Basilisco">
+            <br>
+            <img src="img/FotoBasilisco.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Basilisco')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Batidor">
+            <img src="img/Batidor.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Basilisco')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Campeon">
+            <h1>Campeon</h1>
+            <img src="img/Campeon.JPG" alt="Campeon">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Campeon')">Clonar</button>
+            </div>
+        </span>
+        <br>
+        <span id="Capitan-Bandido">
+            <h1>Capitan Bandido</h1>
+            <img src="img/Capitan Bandido.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <br>
+        <span id="Contemplador">
+            <h1>Contemplador</h1>
+            <img src="img/Contemplador.JPG" alt="">
+            <br>
+            <img src="img/FotoContemplador.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Couatl">
+            <img src="img/Couatl1.JPG" alt="">
+            <img src="img/Couatl2.JPG" alt="">
+            <br>
+            <img src="img/CouatlFoto.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Demonios">
+            <h1>Demonios</h1>
+            <img src="img/Demonio de las Sombras.JPG" alt="">
+            <br>
+            <img src="img/Demonio de las Sombras Foto.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Druida">
+            <img src="img/Druida.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <span id="Elementales">
+            <h1>Elementales</h1>
+            <img src="img/Elemental de Aire.JPG" alt="Elemental de Aire">
+            <br>
+            <img src="img/FotoElementalDeAire.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Espia">
+            <h1>Espia</h1>
+            <img src="img/Espia.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Esqueleto">
+            <h1>Esqueleto</h1>
+            <img src="img/Esqueleto.JPG" alt="">
+            <br>
+            <img src="img/EsqueletoFoto.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Garra-Rpetante">
+            <img src="img/Garra Reptante.JPG" alt="">
+            <br>
+            <img src="img/GarraReptanteFoto.JPG" alt="">
+        </span>
+        <hr>
+        <span id="Golems">
+            <h1>Golem De Carne</h1>
+            <img src="img/Golem de Carne.JPG" alt="">
+            <br>
+            <img src="img/GolemdeCarneFoto.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <br>
+        <span id="Guardia">
+            <h1>Guardia</h1>
+            <img src="img/Guardia.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <br>
+        <span id="Guerrero-Tribal">
+            <h1>Guerrero Tribal</h1>
+            <img src="img/Guerrero Tribal.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Gules')">Clonar</button>
+            </div>
+        </span>
+        <span id="Gules">
+            <h1>Gules</h1>
+            <img src="img/Ghast.JPG" alt="Ghast">
+            <img src="img/Gul.JPG" alt="Gul">
+            <br>
+            <img src="img/FotoGhast.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Gules')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Licantropos">
+            <h1>Licantropos</h1>
+            <img src="img/HombreTigre.JPG" alt="">
+            <img src="img/HombreJabali.JPG" alt="">
+            <br>
+            <img src="img/HombreTigreFoto.JPG" alt="">
+            <img src="img/HombreJabaliGoto.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Gules')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Magos">
+            <h1>Magos</h1>
+            <img src="img/Mago.JPG" alt="Mago">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Magos')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Maton">
+            <h1>Maton</h1>
+            <img src="img/Maton.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Noble">
+            <img src="img/Noble.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Elementales')">Clonar</button>
+            </div>
+        </span>
+        <span id="Ras-Nsi">
+            <h1>Ras Nsi</h1>
+            <img src="img/Ras Nsi.JPG" alt="Ras Nsi">
+            <br>
+            <img src="img/FotoRasNsi.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Ras-Nsi')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Tabaxis">
+            <img src="img/CzadorTabaxi.JPG" alt="">
+            <img src="img/JuglarTabaxi.JPG" alt="">
+            <br>
+            <img src="img/JuglarTabaxiFoto.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Ras-Nsi')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Tumulario">
+            <img src="img/Tumulario.JPG" alt="">
+            <br>
+            <img src="img/Tumulario Foto.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Ras-Nsi')">Clonar</button>
+            </div>
+        </span>
+        <hr>
+        <span id="Veterano">
+            <h1>Veterano</h1>
+            <img src="img/Veterano.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Ras-Nsi')">Clonar</button>
+            </div>
+        </span>
+        <br>
+        <span id="Yuan-Tis">
+            <h1>Yuan-Tis</h1>
+            <img src="img/AbominacionYuanTi.jpeg" alt="Abominacion Yuan-Ti">
+            <img src="img/CorruptoYuanTi.JPG" alt="Corrupto Yuan-Ti">
+            <img src="img/Cuentapesadillas Yuan-Ti.JPG" alt="Cuentapesadillas Yuan-Ti">
+            <img src="img/Guardaestirpe Yuan-Ti.JPG" alt="Guardaestirpe Yuan-Ti">
+            <img src="img/Yuan-Ti Purasangre.JPG" alt="Yuan-Ti Purasangre">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Yuan-Tis')">Clonar</button>
+            </div>
+        </span>
+
+        <span id="Zombis">
+            <h1>Zombis</h1>
+            <img src="img/Zombie.JPG" alt="">
+            <div class="user-input-container">
+                <input type="text" placeholder="X valor">
+                /
+                <input type="text" placeholder="X valor">
+                <button class="clone-button" onclick="cloneUserInput('Ras-Nsi')">Clonar</button>
+            </div>
+        </span>
+    </section>
+
+    <a href="#" id="btn-scroll-top">&uarr;</a>
+
+    <script>
+        var btnScrollTop = document.getElementById("btn-scroll-top");
+
+        window.addEventListener("scroll", function() {
+        if (window.pageYOffset > 300) {
+            btnScrollTop.classList.add("show");
+        } else {
+            btnScrollTop.classList.remove("show");
+        }
+        });
+
+        btnScrollTop.addEventListener("click", function(e) {
+            e.preventDefault();
+            scrollToTop();
+        });
+
+        function scrollToTop() {
+            var position = window.pageYOffset;
+            var interval = setInterval(function() {
+            if (position > 0) {
+            window.scrollTo(0, position);
+            position -= 100; // Ajusta la velocidad de desplazamiento cambiando este valor
+            } else {
+            clearInterval(interval);
+            }
+        }, 20); // Ajusta el tiempo de espera entre cada desplazamiento cambiando este valor
+        }
+
+        function toggleWords(letter) {
+            var words = document.getElementById(letter);
+            words.style.display = (words.style.display === 'none') ? 'block' : 'none';
+        }
+
+        function cloneUserInput(sectionId) {
+            var section = document.getElementById(sectionId);
+            var userInputContainer = section.getElementsByClassName('user-input-container')[0];
+            var clonedUserInputContainer = userInputContainer.cloneNode(true);
+            userInputContainer.parentNode.appendChild(clonedUserInputContainer);
+        }
+    </script>
+    
+</body>
+</html>
